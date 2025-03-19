@@ -20,6 +20,10 @@ formulario.addEventListener("submit", (e) => {
 
   console.log(objecto_mensaje);
 
+  const correo = `mailto:nelsonlondonodev@gmail.com?subject=${asunto}&body=Nombre: ${email}\nMensaje: ${mensaje}`;
+
+  window.location.href = correo;
+
   // console.log(`Email: ${email}, Asunto: ${asunto}, Mensaje: ${mensaje}`);
 });
 
